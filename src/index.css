@@ -1,0 +1,26 @@
+/* Light Mode (Default) */
+:root {
+  --background-color: white;
+  --text-color: black;
+  --navbar-bg: #2d3748;
+  --navbar-text: white;
+  --search-bg: white;
+  --search-text: black;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --background-color: #1a202c;
+  --text-color: #f8f9fa;
+  --navbar-bg: #1a202c;
+  --navbar-text: white;
+  --search-bg: #4a5568;
+  --search-text: white;
+}
+
+/* Apply Background to the Entire Page */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}

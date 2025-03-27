@@ -1,0 +1,57 @@
+/* Ensure Full Viewport Fit */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Main Page Wrapper */
+.navbar-page {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: var(--bg-color, #fff);
+    transition: background 0.3s ease-in-out;
+    overflow: hidden; /* Ensures no page overflow */
+}
+
+/* Navbar Container - Responsive */
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    background: var(--bg-container, white);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+/* Code Box - Prevent Overflow */
+.code-box {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    width: 100%;
+}
+
+/* Dark Mode Fix */
+.dark-mode .navbar-page {
+    background-color: #121212;
+}
+
+.dark-mode .navbar-container {
+    background: #1e1e1e;
+    color: white;
+}
